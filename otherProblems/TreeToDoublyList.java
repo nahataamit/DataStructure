@@ -1,6 +1,5 @@
 package otherProblems;
 
-import BinaryTreeProblems.TreeNode;
 
 public class TreeToDoublyList {
 

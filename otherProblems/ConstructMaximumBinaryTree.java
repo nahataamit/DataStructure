@@ -1,7 +1,5 @@
 package otherProblems;
 
-import BinaryTreeProblems.TreeNode;
-
 public class ConstructMaximumBinaryTree {
     public TreeNode constructMaximumBinaryTree(int[] nums) {
 
