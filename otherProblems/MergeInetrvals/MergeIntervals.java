@@ -1,4 +1,4 @@
-package otherProblems;
+package otherProblems.MergeInetrvals;
 
 import java.text.FieldPosition;
 import java.text.SimpleDateFormat;
@@ -7,7 +7,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.HashSet;
-import java.util.LinkedList;
 import java.util.List;
 
 public class MergeIntervals {

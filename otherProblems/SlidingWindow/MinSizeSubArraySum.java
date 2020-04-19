@@ -1,14 +1,31 @@
 package otherProblems.SlidingWindow;
 
+import otherProblems.MAxWidthOfBinaryTree;
+
 /**
  * Given an array of positive numbers and a positive number ‘S’,
- * find the length of the smallest contiguous subarray whose sum is greater than or equal to ‘S’.
+ * find the length of the smallest contiguous sub array whose sum is greater than or equal to ‘S’.
  * Return 0, if no such subarray exists.
  */
 public class MinSizeSubArraySum {
     public static int findMinSubArray(int S, int[] arr) {
-        // TODO: Write your code here
-        return -1;
+        int startWindow = 0;
+        int length = Integer.MAX_VALUE;
+        int windowSum = 0;
+        for(int endWindow = 0; endWindow<arr.length;endWindow++){
+
+            windowSum+=arr[endWindow];
+            // Shrink the window as small as possible until the windowSum is
+            // smaller than 'S'
+            while (windowSum>=S){
+                length = Math.min(length,endWindow-startWindow+1);
+                windowSum-=arr[startWindow];
+                startWindow+=1;
+            }
+
+        }
+
+        return length;
     }
 
     public static void main(String[] args) {

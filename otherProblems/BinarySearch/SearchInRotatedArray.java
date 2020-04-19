@@ -1,4 +1,4 @@
-package otherProblems;
+package otherProblems.BinarySearch;
 
 public class SearchInRotatedArray {
     public boolean search(int[] nums, int target) {
